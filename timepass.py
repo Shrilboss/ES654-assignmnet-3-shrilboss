@@ -10,9 +10,20 @@ one = OneHotEncoder(sparse=False)
 # print(r)
 X = np.array([[2,2,2],[2,2,2],[2,2,2]])
 theta = np.array([[3,1],[3,1],[3,1]])
-print(np.exp(np.dot(X[0],theta)))
-print(np.dot(X[0],theta[:,0]),np.dot(X[0],theta[:,1]))
-print(np.exp(np.dot(X[0],theta)).sum(axis=-1,keepdims=True))
+
+from scipy.special import softmax,log_softmax
+
+r = np.random.rand(3,10)
+print(r)
+print(r.shape)
+o=softmax(r)
+print(o.shape)
+print(o)
+print(np.log(o))
+print(log_softmax(r))
+# print(np.exp(np.dot(X[0],theta)))
+# print(np.dot(X[0],theta[:,0]),np.dot(X[0],theta[:,1]))
+# print(np.exp(np.dot(X[0],theta)).sum(axis=-1,keepdims=True))
 # data = ['cold', 'cold', 'warm', 'cold', 'hot', 'hot', 'warm', 'cold', 'warm', 'hot']
 # values = np.array(data)
 # print(values)
