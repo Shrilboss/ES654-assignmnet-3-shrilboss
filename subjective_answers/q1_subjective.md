@@ -11,6 +11,6 @@
 
 ![Q1_2](./../q1/Feature_5,15.png "Q1_2")
 
-### Features - 5 and 15
+### Features - 7 and 17
 
 ![Q1_3](./../q1/Feature_7,17.png "Q1_3")
