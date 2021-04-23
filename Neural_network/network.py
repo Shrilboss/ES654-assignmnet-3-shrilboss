@@ -28,7 +28,7 @@ class NN():
             parameters['b' + str(i)] = np.zeros((1,layers[i]))     
         return parameters
     
-    def __init__(self,inputs,output,layer_dims,activations,learning_rate=4):
+    def __init__(self,inputs,output,layer_dims,activations,learning_rate=0.6):
         """
         input,output,layer_dims,activations
         """
@@ -60,8 +60,8 @@ class NN():
         self.caches.append(cache)
 
         #for K_class classification
-        s = self.softmax(output)
-        activations_list.append(s)
+        # s = self.softmax(output)
+        # activations_list.append(s)
 
         #for Binary classfication
         # s = sigmoid(output)[0]
@@ -136,10 +136,10 @@ class NN():
             activation_list = self.forward(X)
 
             #for Digits
-            y_hat = activation_list[-2]
+            # y_hat = activation_list[-2]
 
             #for Boston
-            # y_hat = activation_list[-1]
+            y_hat = activation_list[-1]
 
             #Calculate grad_loss for last layer
             grad_cost =  elementwise_grad(mse)

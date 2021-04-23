@@ -5,7 +5,8 @@
 - no. of iterations - 2000
 - learning_rate = 4
 
-- **Accuracy = 88.53644963828603**
+- **Max Accuracy : 86.14357262103506**
+- **Average Accuracy : 83.86199220923761**
 
 ## Boston Housing Dataset
 
@@ -13,6 +14,9 @@
 - activations - ["sigmoid" , "relu"]
 - no. of iterations - 3000
 - learning_rate = 0.6
-
-- **MAE  = 2.038565042036858**
-- **RMSE = 2.8133786763343593**
+<br>
+- **MIN MAE : 2.531027935494974**
+- **Average MAE : 3.670933448737193**
+<br>
+- **MIN RMSE: 3.9768421563115988**
+- **Average RMSE : 5.1888172082941315**
