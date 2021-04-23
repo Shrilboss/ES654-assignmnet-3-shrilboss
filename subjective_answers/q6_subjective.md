@@ -14,9 +14,9 @@
 - activations - ["sigmoid" , "relu"]
 - no. of iterations - 3000
 - learning_rate = 0.6
-</br>
+
 - **MIN MAE : 2.531027935494974**
 - **Average MAE : 3.670933448737193**
-</br>
+
 - **MIN RMSE: 3.9768421563115988**
 - **Average RMSE : 5.1888172082941315**
